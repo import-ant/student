@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 最外层容器 -->
+    <div class="wrapper">
+        <!-- 总体结构分为两个结构，header main  -->
+        <div class="header">
+            <!-- header部分有显示区域和隐藏区域 -->
+            <!-- 显示区域 -->
+            <div class="logo">
+                <img src="./img/logo.png" alt="" class="logo-img">
+                <span class="logo-title">渡</span>
+                <span class="logo-title">一</span>
+                <span class="logo-title">教</span>
+                <span class="logo-title">育</span>
+            </div>
+            <!-- 隐藏区域 -->
+            <!-- 隐藏区域的按钮 -->
+            <div class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- 隐藏区域的下拉菜单 -->
+            <div class="drop-nav">
+                <ul>
+                    <li data-hash="stu-list">学生列表</li>
+                    <li data-hash="stu-add">新增学生</li>
+                    <li data-hash="stu-echart">统计图表</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 主体部分 -->
+        <div class="main">
+            <!-- 分为左右两个部分 -->
+            <div class="slider">
+                <h5>学生管理</h5>
+                <ul>
+                    <li class="active" data-hash="stu-list">学生列表</li>
+                    <li data-hash="stu-add">新增学生</li>
+                    <li data-hash="stu-echart">统计图表</li>
+                </ul>
+            </div>
+            <div class="content">
+                <div id="stu-list">学生列表</div>
+                <div id="stu-add">新增学生</div>
+                <div id="stu-echart">统计图表</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
